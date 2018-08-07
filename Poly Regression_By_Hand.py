@@ -208,30 +208,3 @@ plt.grid(True)
 
 plt.show() # This shows the graph thats been created
 print(pol) # This print is here to show you the vaules that are beeing used in the graph 
-"""
-#poly=np.asarray(poly)  ## This is an attempt I made.
-
-
-
-#x = np.random.rand(100,2)
-#y = np.random.rand(100,2)
-x = np.random.rand(100)
-y = np.random.rand(100)
-
-poly = poly_regression(x,y,1)
-
-#indices = np.random.permutation(x.shape[0])
-#training_idx, test_idx = indices[:80], indices[80:]
-#training, test = x[training_idx,:], x[test_idx,:]
-np.random.shuffle(x)
-##np.random.shuffle(y)
-#training, test = x[:70,:], y[30:,:]
-
-plt.scatter(x, y,  color='black')
-xp = np.linspace(-5, 5, 100)
-plt.plot(x,x,(xp))
-plt.ylabel('Y')
-plt.xlabel('X')
-plt.grid(True)
-plt.show()
-"""
